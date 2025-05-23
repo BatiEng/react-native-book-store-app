@@ -15,7 +15,6 @@ import styles from "../../assets/styles/login.styles";
 import { Ionicons } from "@expo/vector-icons";
 import COLORS from "../../constants/colors";
 import { router } from "expo-router";
-import axios from "axios";
 import { useAuthStore } from "../../store/authStore.js";
 
 const SignUp = () => {

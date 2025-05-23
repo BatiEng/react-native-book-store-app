@@ -6,7 +6,7 @@ export const useAuthStore = create((set, get) => ({
   user: null,
   token: null,
   isLoading: false,
-  backendURL: "http://192.168.1.14:3000/api/",
+  backendURL: "http://localhost:3000/api/",
   isCheckingAuth: true,
 
   register: async (username, email, password) => {

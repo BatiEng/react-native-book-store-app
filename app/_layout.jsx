@@ -11,14 +11,6 @@ export default function RootLayout() {
   const router = useRouter();
   const segments = useSegments();
   const { checkAuth, user, token } = useAuthStore();
-  // const [fontsLoaded] = useFonts({
-  //   "JetBrainsMono-Medium": require("../assets/fonts/JetBrainsMono-Medium.ttf"),
-  // });
-
-  // useEffect(() => {
-  //   if (fontsLoaded) SplashScreen.hideAsync();
-  // }, [fontsLoaded]);
-
   useEffect(() => {
     const inAuthScreen = segments[0] === "(auth)";
     const isSignedIn = user && token;
